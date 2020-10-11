@@ -7,7 +7,7 @@ app.use('/', (req, res) => {
 	res.send('Hello world	');
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
 	console.log("ENV");
 	console.log(process.env)
 	console.log(`PORT: ${process.env.port}`);
