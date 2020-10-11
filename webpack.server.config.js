@@ -41,12 +41,15 @@ module.exports = env => {
 		plugins: [
 			//new TerserWebpackPlugin(),
 
+			/*
 			new webpack.DefinePlugin({
 				PRODUCTION: JSON.stringify(true),
 				'process.env': {
 					NODE_ENV: JSON.stringify(env.NODE_ENV)
 				}
 			})
+
+			*/
 		]
 	};
 
