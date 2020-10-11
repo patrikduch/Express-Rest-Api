@@ -1,6 +1,5 @@
 // Module export via CommonJS style
 module.exports = env => {
-	const isDev = env.NODE_ENV == 'production' ? true : false;
 	const config = {
 		target: 'node',
 

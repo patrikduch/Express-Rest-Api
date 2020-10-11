@@ -14,4 +14,6 @@ module.exports = {
       "@typescript-eslint/interface-name-prefix": "off",
       "@typescript-eslint/no-inferrable-types": "off",
     },
+
+    "ignorePatterns": [ "dist/*" ] 
   };
