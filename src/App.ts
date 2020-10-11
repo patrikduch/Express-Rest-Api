@@ -8,5 +8,8 @@ app.use('/', (req, res) => {
 })
 
 app.listen(PORT, () => {
+	console.log("ENV");
+	console.log(process.env)
+	console.log(`PORT: ${process.env.port}`);
 	console.log(`Server is listening on port: ${PORT}`);
 })

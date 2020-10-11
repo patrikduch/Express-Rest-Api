@@ -7725,6 +7725,9 @@ app.use('/', (req, res) => {
     res.send('Hello world	');
 });
 app.listen(PORT, () => {
+    console.log("ENV");
+    console.log(Object({"NODE_ENV":"production"}));
+    console.log(`PORT: ${Object({"NODE_ENV":"production"}).port}`);
     console.log(`Server is listening on port: ${PORT}`);
 });
 
