@@ -1,9 +1,6 @@
-const webpack = require('webpack');
-
 // Module export via CommonJS style
 module.exports = env => {
 	const isDev = env.NODE_ENV == 'production' ? true : false;
-	console.log(isDev);
 	const config = {
 		target: 'node',
 
@@ -37,20 +34,6 @@ module.exports = env => {
 			// We no not want to minimize our code.
 			minimize: false
 		},
-
-		plugins: [
-			//new TerserWebpackPlugin(),
-
-			/*
-			new webpack.DefinePlugin({
-				PRODUCTION: JSON.stringify(true),
-				'process.env': {
-					NODE_ENV: JSON.stringify(env.NODE_ENV)
-				}
-			})
-
-			*/
-		]
 	};
 
 	return config;
