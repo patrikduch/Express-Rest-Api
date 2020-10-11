@@ -4,7 +4,8 @@
 	"description": "Basic setup for express REST API",
 	"author": "Patrik Duch <duchpatrik@icloud.com>",
 	"scripts": {
-		"start": "/opt/node/bin/node server.js",
+		"start": "node server/server.js",
+    	"heroku-postbuild": "yarn run build:prod",
 		"prod": "npm-run-all --parallel prod:*",
 		"dev": "npm-run-all --parallel dev:*",
 		"dev:build-server": "webpack --config webpack.server.config.js --env.NODE_ENV=development --watch",
