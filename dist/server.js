@@ -7720,11 +7720,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(__webpack_require__(53));
 const app = express_1.default();
-const PORT = Object({"NODE_ENV":"production"}).PORT || 3000;
 app.use('/', (req, res) => {
     res.send('Hello world	');
 });
-app.listen(PORT);
+app.listen(Object({"NODE_ENV":"production"}).PORT || 5000);
 
 
 /***/ }),
